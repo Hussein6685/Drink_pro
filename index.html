@@ -21,22 +21,25 @@
             display: none;  /* Safari and Chrome */
         }
     </style>
-    <section class="font-[Inter] box-border scroll-smooth relative bodyColor bg-gradient-to-t from-[#0E0E0E] to-[#D35910]">
+    <section class="font-[Inter] lg:min-h-[580px] box-border scroll-smooth relative bodyColor bg-gradient-to-t from-[#0E0E0E] to-[#D35910]">
         <!-- nav bar -->
         <aside
             class="overflow-x-auto z-10 h-full absolute px-1 md:px-4 flex flex-col justify-between transition duration-300">
             <div class="m-auto overflow-x-hidden h-[40%] lg:h-[70%] sb">
                 <ul class="tracking-wide leading-5 text-sm font-normal">
-                    <li class="" onclick="sections1(); showSection('boom2'); colors('bg-gradient-to-t from-[#0E0E0E] to-[#D35910]')">
+                    <li class="" onclick="sections1(); showSection('boom2'); colors('bg-gradient-to-t from-[#0E0E0E] to-[#D35910]'); drinks('STAR/منتجات BOOM BOOM/نكهة برتقال 5.png');">
                         <img class="w-[30%] sm:w-[50%] lg:w-full hover:scale-[1.2] transition duration-700" src="star/LOGO/boom-2-2.png" alt="">
                     </li>
-                    <li class="" onclick="sections1(); showSection('frizbi'); colors('bg-gradient-to-t from-[#0E0E0E] to-[#ABB200]')">
+                    <li class="" onclick="sections1(); showSection('frizbi'); colors('bg-gradient-to-t from-[#0E0E0E] to-[#ABB200]'); drinks('STAR/FRIZBI/APPLE & GRAPE 5.png');">
                         <img class="w-[30%] sm:w-[50%] lg:w-full hover:scale-[1.2] transition duration-700" src="STAR\LOGO\FRIZBI-2.png" alt="">
                     </li>
-                    <li class="" onclick="sections1(); showSection('code'); colors('bg-gradient-to-t from-[#0E0E0E] to-[#CE232D]')">
+                    <li class="" onclick="sections1(); showSection('code'); colors('bg-gradient-to-t from-[#0E0E0E] to-[#CE232D]'); drinks('STAR/CODE ROD/CODE ROD 2.png');">
                         <img class="w-[30%] sm:w-[50%] lg:w-full hover:scale-[1.2] transition duration-700" src="STAR\LOGO\CODE-2.png" alt="">
                     </li>
-                    <li class="" onclick="sections1(); showSection('egy'); colors('bg-gradient-to-t from-[#0E0E0E] to-[#832429]')">
+                    <li class="" onclick="sections1(); showSection('egy'); colors('bg-gradient-to-t from-[#0E0E0E] to-[#832429]'); drinks('STAR/EGYXOS CAN/Egyxos 3.png');">
+                        <img class="w-[30%] sm:w-[50%] lg:w-full hover:scale-[1.2] transition duration-700" src="STAR\LOGO\EGY-1-2.png" alt="">
+                    </li>
+                    <li class="" onclick="sections1(); showSection('einseng'); colors('bg-gradient-to-t from-[#0E0E0E] to-[#0091CF]'); drinks('STAR/EINSENG ENERGY/EINSENG ENERGY 2.png');">
                         <img class="w-[30%] sm:w-[50%] lg:w-full hover:scale-[1.2] transition duration-700" src="STAR\LOGO\EGY-1-2.png" alt="">
                     </li>
                 </ul>
@@ -203,11 +206,50 @@
             </div>
         </div>
         <!-- main section/ -->
+        <!-- main section -->
+        <div class="content hidden justify-between items-center w-full section1 einseng">
+            <div class="w-[20%] relative group m-auto">
+                <img class="boxImage scale-[1.2] w-[80%] relative group-hover:-translate-x-[40%] -translate-x-[50%] translate-y-[50%] group-hover:translate-y-[50%] group-hover:scale-125 origin-bottom-right group-hover:rotate-6 z-[1000] duration-700"
+                    src="star/Cartoons/8.png" alt="">
+                <img class="boxImage absolute z-[9] w-[80%] group-hover:-translate-x-[50%] -translate-x-[27%] -translate-y-[70%] group-hover:scale-90 origin-bottom-right group-hover:rotate-6 duration-700"
+                    src="star/Cartoons/8.png" alt="">
+                <img class="boxImage absolute z-[9] w-[80%] group-hover:-translate-x-[50%] -translate-x-[100%] -translate-y-[70%] group-hover:scale-90 origin-bottom-right group-hover:rotate-6 duration-700"
+                    src="star/Cartoons/8.png" alt="">
+            </div>
+            <div class="image w-[40%] group flex justify-center">
+                <img class="drinkImage w-[15%] z-10 transition duration-[300ms] pointer origin-bottom-right group-hover:rotate-[6.79deg] shadow-[0px_4px_0px_0px_rgba(0, 0, 0, 0)] rounded-[59px] ease-out group-hover:shadow-none"
+                    src="STAR\EINSENG ENERGY\EINSENG ENERGY 2.png" alt="">
+                <img class="liquidImage absolute w-0 group-hover:w-[13%] z-[7] transition duration-[0.5s] pointer origin-bottom-right group-hover:-rotate-[2deg] translate-y-[0%] -translate-x-[32%]"
+                    src="STAR\orange\splash-2.png" alt="">
+                <img class="sliceImage absolute w-0 group-hover:w-[13%] z-[9] transition duration-[0.5s] pointer origin-bottom-right group-hover:-rotate-6 translate-y-[35%] -translate-x-[24%]"
+                    src="STAR\orange\ice.png" alt="">
+                <img class="drinkImage absolute w-[2%] blur-[1px] rotate-[30deg]  z-[9] transition duration-[0.5s] pointer origin-top-left group-hover:rotate-6 shadow-[10px_20px_50px_0px_rgba(0, 0, 0, 0.7)]  translate-y-[50%] translate-x-[650%]"
+                    src="STAR\EINSENG ENERGY\EINSENG ENERGY 2.png" alt="">
+                <img class="drinkImage absolute w-[1%] blur-[1px] -rotate-[30deg] z-[9] transition duration-[0.5s] pointer origin-top-right group-hover:rotate-6 shadow-[10px_20px_50px_0px_rgba(0, 0, 0, 0.7)]  translate-y-[110%] -translate-x-[900%]"
+                    src="STAR\EINSENG ENERGY\EINSENG ENERGY 2.png" alt="">
+            </div>
+            <div dir="ltr" class="text text-white w-[20%] m-auto">
+                <img class="logoImage" src="STAR\LOGO\EGY-1.png" alt="">
+                <h2 id="fruit-text" class="text-base uppercase">EINSENG ENERGY</h2>
+                <p class="text-[6px] lg:text-sm lg:mb-3">
+                    You might be looking at this Slider Revolution template and wondering how the heck you’re going to
+                    repurpose it for your
+                    needs. Don’t worry. Whether you want to edit the logo, change the images, or add new text to the
+                    sliders, it can easily
+                    be done within minutes.
+                </p>
+                <a class="text-white text-[6px] lg:text-sm py-2 px-3 rounded-[20px] border border-[#D35910] hover:bg-[#D35910]"
+                    href="https://starmesrubat.com/shop/">
+                    All products
+                </a>
+            </div>
+        </div>
+        <!-- main section/ -->
         <!-- icons section -->
         <div class="section1 boom2">
             <div class="w-full px-[2.5%]">
                 <div class="flex justify-center items-center max-w-[1200px] m-auto overflow-scroll sb">
-                    <div class="border-b border-[#D35910] flex justify-center">
+                    <div class=" flex justify-center">
                         <div class="group relative w-20" >
                             <img class="relative group-hover:scale-[1] w-[18px] h-[80px] lg:mr-[10%] group-hover:-translate-y-3 z-10 duration-[0.5s] origin-bottom-right group-hover:rotate-6"
                                 onclick="changeText('Orange'); drinks(this.src); fruits('star/orange/orange-poster.svg'); slices('star/orange/orange-ingredients-10.svg'); liquids('star/orange/orange-juice-splash.svg');  boxs('STAR/Cartoons/8.png'); colors('bg-gradient-to-t from-[#0E0E0E] to-[#D35910]')"
@@ -290,7 +332,7 @@
         <div class="hidden section1 frizbi">
             <div class="w-full px-[2.5%]">
                 <div class="flex justify-center items-center max-w-[1200px] m-auto overflow-scroll sb pr-[80%] sm:pr-0">
-                    <div class="border-b border-[#D35910] flex justify-center">
+                    <div class=" flex justify-center">
                         <div class="group relative w-20" >
                             <img class="relative group-hover:scale-[1] w-[18px] h-[80px] lg:mr-[10%] group-hover:-translate-y-3 z-10 duration-[0.5s] origin-bottom-right group-hover:rotate-6"
                                 onclick="changeText('APPLE & GRAPE'); drinks(this.src); fruits('star/orange/orange-poster.svg'); slices('star/orange/orange-ingredients-10.svg'); liquids('star/orange/orange-juice-splash.svg');  boxs('star/Cartoons/8.png'); colors('bg-gradient-to-t from-[#0E0E0E] to-[#ABB200]')"
@@ -381,8 +423,8 @@
         <!-- icons section -->
         <div class="hidden section1 code">
             <div class="w-full px-[2.5%]">
-                <div class="flex justify-center items-center max-w-[1200px] m-auto overflow-scroll sb pr-[80%] sm:pr-0">
-                    <div class="border-b border-[#D35910] flex justify-center">
+                <div class="flex justify-center items-center max-w-[1200px] m-auto overflow-scroll sb sm:pr-0">
+                    <div class=" flex justify-center">
                         <div class="group relative w-20" >
                             <img class="relative group-hover:scale-[1] w-[18px] h-[80px] lg:mr-[10%] group-hover:-translate-y-3 z-10 duration-[0.5s] origin-bottom-right group-hover:rotate-6"
                                 onclick="changeText('CODE ROD'); drinks(this.src); fruits('star/orange/orange-poster.svg'); slices('star/orange/orange-ingredients-10.svg'); liquids('star/orange/orange-juice-splash.svg');  boxs('star/Cartoons/8.png'); colors('bg-gradient-to-t from-[#0E0E0E] to-[#CE232D]')"
@@ -410,8 +452,8 @@
         <!-- icons section -->
         <div class="hidden section1 egy">
             <div class="w-full px-[2.5%]">
-                <div class="flex justify-center items-center max-w-[1200px] m-auto overflow-scroll sb pr-[80%] sm:pr-0">
-                    <div class="border-b border-[#D35910] flex justify-center">
+                <div class="flex justify-center items-center max-w-[1200px] m-auto overflow-scroll sb sm:pr-0">
+                    <div class=" flex justify-center">
                         <div class="group relative w-20" >
                             <img class="relative group-hover:scale-[1] w-[18px] h-[80px] lg:mr-[10%] group-hover:-translate-y-3 z-10 duration-[0.5s] origin-bottom-right group-hover:rotate-6"
                                 onclick="changeText('EGYXOS'); drinks(this.src); fruits('star/orange/orange-poster.svg'); slices('star/orange/orange-ingredients-10.svg'); liquids('star/orange/orange-juice-splash.svg');  boxs('star/Cartoons/8.png'); colors('bg-gradient-to-t from-[#0E0E0E] to-[#CE232D]')"
@@ -430,6 +472,26 @@
                             <img class="absolute group-hover:scale-[1] w-[18px] h-[80px] lg:mr-[10%] group-hover:origin-bottom group-hover:rotate-[30deg] transform-gpu transition duration-700 z-[9] -translate-y-[100%]"
                                 src="STAR\EGYXOS CAN\EGYXOS CAN 3.png" alt="">
                             <h2 class="group-hover:text-[#D35910] text-white text-[6px] lg:text-sm">CAN</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- icons section/ -->
+        <!-- icons section -->
+        <div class="hidden section1 einseng">
+            <div class="w-full px-[2.5%]">
+                <div class="flex justify-center items-center max-w-[1200px] m-auto overflow-scroll sb  sm:pr-0">
+                    <div class=" flex justify-center">
+                        <div class="group relative w-20" >
+                            <img class="relative group-hover:scale-[1] w-[18px]  lg:mr-[30%] group-hover:-translate-y-3 z-10 duration-[0.5s] origin-bottom-right group-hover:rotate-6"
+                                onclick="changeText('EINSENG ENERGY'); drinks(this.src); fruits('star/orange/orange-poster.svg'); slices('star/orange/orange-ingredients-10.svg'); liquids('star/orange/orange-juice-splash.svg');  boxs('star/Cartoons/8.png'); colors('bg-gradient-to-t from-[#0E0E0E] to-[#0091CF]')"
+                                src="STAR\EINSENG ENERGY\EINSENG ENERGY 2.png" alt="">
+                            <img class="absolute group-hover:scale-[1] w-[18px]  lg:mr-[30%] group-hover:origin-bottom group-hover:-rotate-[30deg] transform-gpu transition duration-700 z-[9] -translate-y-[100%]"
+                                src="STAR\EINSENG ENERGY\EINSENG ENERGY 2.png" alt="">
+                            <img class="absolute group-hover:scale-[1] w-[18px]  lg:mr-[30%] group-hover:origin-bottom group-hover:rotate-[30deg] transform-gpu transition duration-700 z-[9] -translate-y-[100%]"
+                                src="STAR\EINSENG ENERGY\EINSENG ENERGY 2.png" alt="">
+                            <h2 class="group-hover:text-[#D35910] text-white text-[6px] lg:text-sm">EINSENG</h2>
                         </div>
                     </div>
                 </div>
