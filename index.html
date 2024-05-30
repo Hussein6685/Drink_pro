@@ -682,9 +682,6 @@
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
      <script>
-        let fruitImage = document.querySelector(".fruitImage");
-        let sliceImage = document.querySelector(".sliceImage");
-        let liquidImage = document.querySelector(".liquidImage");
         let logoImage = document.querySelector(".logoImage");
         function drinks(drink) {
             let drinkImages = document.querySelectorAll(".drinkImage");
@@ -699,13 +696,22 @@
             });
         }
         function fruits(fruit) {
-            fruitImage.src = fruit;
+            let fruitImages = document.querySelectorAll(".fruitImage");
+            fruitImages.forEach(function(img) {
+                img.src = fruit;
+            });
         }
         function slices(slice) {
-            sliceImage.src = slice;
+            let sliceImages = document.querySelectorAll(".sliceImage");
+            sliceImages.forEach(function(img) {
+                img.src = slice;
+            });
         }
         function liquids(liquid) {
-            liquidImage.src = liquid;
+            let liquidImages = document.querySelectorAll(".liquidImage");
+            liquidImages.forEach(function(img) {
+                img.src = liquid;
+            });
         }
         function logos(logo) {
             logoImage.src = logo;
