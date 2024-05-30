@@ -81,7 +81,7 @@
             </div>
             <div dir="ltr" class="text text-white w-[20%] m-auto">
                 <img class="logoImage my-[10%]" src="star/LOGO/star-boom-1.png" alt="">
-                <h2 id="fruit-text" class="text-base uppercase">Orange</h2>
+                <h2 class="fruit-text text-base uppercase">Orange</h2>
                 <p class="text-[6px] lg:text-sm lg:mb-3">
                     You might be looking at this Slider Revolution template and wondering how the heck you’re going to
                     repurpose it for your
@@ -122,7 +122,7 @@
             </div>
             <div dir="ltr" class="text text-white w-[20%] m-auto">
                 <img class="logoImage" src="STAR\LOGO\FRIZBI-1.png" alt="">
-                <h2 id="fruit-text" class="text-base uppercase">Orange</h2>
+                <h2 class="fruit-text text-base uppercase">Orange</h2>
                 <p class="text-[6px] lg:text-sm lg:mb-3">
                     You might be looking at this Slider Revolution template and wondering how the heck you’re going to
                     repurpose it for your
@@ -161,7 +161,7 @@
             </div>
             <div dir="ltr" class="text text-white w-[20%] m-auto">
                 <img class="logoImage" src="STAR\LOGO\CODE-1.png" alt="">
-                <h2 id="fruit-text" class="text-base uppercase">Code Rod</h2>
+                <h2 class="fruit-text text-base uppercase">Code Rod</h2>
                 <p class="text-[6px] lg:text-sm lg:mb-3">
                     You might be looking at this Slider Revolution template and wondering how the heck you’re going to
                     repurpose it for your
@@ -200,7 +200,7 @@
             </div>
             <div dir="ltr" class="text text-white w-[20%] m-auto">
                 <img class="logoImage" src="STAR\LOGO\EGY-1.png" alt="">
-                <h2 id="fruit-text" class="text-base uppercase">EGYXOS</h2>
+                <h2 class="fruit-text text-base uppercase">EGYXOS</h2>
                 <p class="text-[6px] lg:text-sm lg:mb-3">
                     You might be looking at this Slider Revolution template and wondering how the heck you’re going to
                     repurpose it for your
@@ -239,7 +239,7 @@
             </div>
             <div dir="ltr" class="text text-white w-[20%] m-auto">
                 <img class="logoImage" src="STAR\LOGO/BOOM-2-1.png" alt="">
-                <h2 id="fruit-text" class="text-base uppercase">Boom Boom Orange</h2>
+                <h2 class="fruit-text text-base uppercase">Boom Boom Orange</h2>
                 <p class="text-[6px] lg:text-sm lg:mb-3">
                     You might be looking at this Slider Revolution template and wondering how the heck you’re going to
                     repurpose it for your
@@ -278,7 +278,7 @@
             </div>
             <div dir="ltr" class="text text-white w-[20%] m-auto">
                 <img class="logoImage" src="STAR\LOGO/BOOM-3-1.png" alt="">
-                <h2 id="fruit-text" class="text-base uppercase">Boom Boom Cola</h2>
+                <h2 class="fruit-text text-base uppercase">Boom Boom Cola</h2>
                 <p class="text-[6px] lg:text-sm lg:mb-3">
                     You might be looking at this Slider Revolution template and wondering how the heck you’re going to
                     repurpose it for your
@@ -317,7 +317,7 @@
             </div>
             <div dir="ltr" class="text text-white w-[20%] m-auto">
                 <img class="logoImage" src="STAR\LOGO/BOOM-1-1.png" alt="">
-                <h2 id="fruit-text" class="text-base uppercase">Boom Boom Lemon</h2>
+                <h2 class="fruit-text text-base uppercase">Boom Boom Lemon</h2>
                 <p class="text-[6px] lg:text-sm lg:mb-3">
                     You might be looking at this Slider Revolution template and wondering how the heck you’re going to
                     repurpose it for your
@@ -356,7 +356,7 @@
             </div>
             <div dir="ltr" class="text text-white w-[20%] m-auto">
                 <img class="logoImage" src="STAR\LOGO\genseng-1.png" alt="">
-                <h2 id="fruit-text" class="text-base uppercase">EINSENG ENERGY</h2>
+                <h2 class="fruit-text text-base uppercase">EINSENG ENERGY</h2>
                 <p class="text-[6px] lg:text-sm lg:mb-3">
                     You might be looking at this Slider Revolution template and wondering how the heck you’re going to
                     repurpose it for your
@@ -727,8 +727,10 @@
         }
 
         function changeText(newText) {
-            let fruitText = document.getElementById("fruit-text");
-            fruitText.innerText = newText;
+            let fruitTexts = document.querySelectorAll(".fruit-text");
+            fruitTexts.forEach(function(fruitText) {
+                fruitText.innerText = newText;
+            });
         }
         function sections1() {
             let sections = document.querySelectorAll(".section1");
